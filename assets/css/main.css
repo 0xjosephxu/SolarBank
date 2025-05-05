@@ -1,0 +1,139 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@theme {
+  --font-sans: 'Bai Jamjuree', sans-serif;
+  --ui-primary: #ffa700;
+  --ui-secondary: #0077ff;
+  --color-deep-orange: #ffa700;
+  --color-deep-orange-opacity: #ffa70080;
+  --ui-border-accented: #303030;
+  --ui-border: #303030;
+
+  /* stake & bridge */
+  --font-common-color: #fff;
+  --font-common-family: 'Bai Jamjuree', sans-serif;
+  --font-common-size: 0.875rem;
+  --font-common-style: normal;
+  --font-common-weight: 500;
+  --font-common-line-height: normal;
+  --font-info-color: #8b8b8b;
+  --font-title-size: 1.5rem;
+  --font-title-weight: 700;
+  --font-color-blue: #07f;
+
+  --border-common-color: #303030;
+  --border-common-radius: 0.25rem;
+
+  --background-input: #202020;
+  --background-icon: #1f2c3d;
+  --background-common: #0e0e0e;
+  --background-light-grey: rgba(255, 255, 255, 0.1);
+  --background-lighter-grey: #ffffff1a;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1 {
+  @apply text-8xl;
+}
+
+h2 {
+  @apply text-5xl;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+h5 {
+  @apply text-lg;
+}
+
+h6 {
+  @apply text-base;
+}
+
+.common-page {
+  padding: 4rem 1.5rem;
+}
+
+.common-title,
+.common-text,
+.common-info {
+  color: var(--font-common-color);
+  font-family: var(--font-sans);
+  font-size: var(--font-common-size);
+  font-style: var(--font-common-style);
+  font-weight: var(--font-common-weight);
+  line-height: var(--font-common-line-height);
+}
+
+.common-title {
+  font-size: var(--font-title-size);
+  font-weight: var(--font-title-weight);
+}
+
+.common-info {
+  color: var(--font-info-color);
+}
+
+.common-action {
+  color: var(--font-color-blue);
+}
+
+.common-button {
+  color: #0e0e0e;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-style: var(--font-common-style);
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+
+.common-border {
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-common-color);
+}
+
+.common-trade-card-input {
+  input {
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 2.5rem;
+    font-style: var(--font-common-style);
+    font-weight: 700;
+    line-height: var(--font-common-line-height);
+    border: none;
+    background: transparent;
+    --tw-ring-inset: transparent;
+    outline: none;
+    text-align: right;
+    width: auto;
+    padding: 0;
+  }
+}
+
+.common-input {
+  input {
+    border-radius: 0.25rem;
+    border: 1px solid var(--border-common-color);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 1.25rem;
+    font-style: var(--font-common-style);
+    font-weight: 700;
+    line-height: var(--font-common-line-height);
+    background: var(--background-input);
+    --tw-ring-inset: transparent;
+    outline: none;
+    text-align: left;
+    padding: 1rem 1.25rem;
+  }
+}
